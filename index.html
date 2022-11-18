@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicada</title>
+</head>
+<body>
+    <div id="key-exchange-div">
+        <div id="cipher-div">
+            <img id="cipher-image-area" src="" alt="" hidden>
+            <br>
+            <input type="file" onchange="fileHandler(this)">
+            <br>
+            <input type="text" id="cipher-location-input" placeholder="enter location">
+            <button id="cipher-key-button">Cipher Key</button>
+            <br>
+            <br>
+        </div>
+
+        <div id="decipher-div" hidden>
+            <img src="cicada.jpeg" alt="No image found">
+            <br>
+            <input type="text" id="decipher-location-input" placeholder="enter location">
+            <button id="decipher-key-button">Decipher Key</button>
+            <br>
+        </div>
+    </div>
+
+    <div id="chat-div" hidden>
+        <textarea id="message-recv-area" cols="30" rows="10" disabled></textarea>
+        <textarea id="message-send-area" cols="30" rows="10"></textarea>
+        <br>
+        <button id="decrypt-message-button">Decrypt Message</button>
+        <button id="encrypt-message-button">Encrypt and send Message</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
